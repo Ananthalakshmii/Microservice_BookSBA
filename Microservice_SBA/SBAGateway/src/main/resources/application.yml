@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: book-service
+          uri: lb://BOOK-SERVICE
+          predicates:
+            - Path=/bookservice/**
+         
+        - id: student-service
+          uri: lb://STUDENT-SERVICE
+          predicates:
+            - Path=/studentservice/**
+         
+              
+
+  
+  
+
+  
+  
+  
+        
+        
+          
